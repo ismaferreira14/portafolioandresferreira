@@ -1,0 +1,18 @@
+body {
+   
+    text-align: center;
+    color: black;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+caption {
+    color: rgb(31, 124, 141);
+    font-size: xx-large;
+    text-shadow: 3px 3px 4px rgba(7, 150, 166, 0.5), 0 0 0.5em rgb(10, 145, 179);
+    text-decoration: underline;
+}
+
+table {
+    border: 4px solid rgb(0, 69, 78);
+}

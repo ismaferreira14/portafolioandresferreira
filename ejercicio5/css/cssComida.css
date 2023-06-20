@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(167, 228, 233);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    background-size: cover;
+    text-align: center;
+}
+
+table {
+    border: solid rgb(22, 64, 202);
+}
+
+thead {
+    background-color: black;
+    color: rgb(63, 172, 206);
+}
+
+tbody {
+    color: rgb(15, 21, 51);
+}
+
+tfoot {
+    background-color: rgb(203, 227, 107);
+    color: rgb(59, 4, 122);
+}

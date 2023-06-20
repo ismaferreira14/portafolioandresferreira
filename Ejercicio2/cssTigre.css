@@ -1,0 +1,33 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    padding-left: 40%;
+    text-shadow: 3px 3px 4px rgba(47, 195, 214, 0.5), 0 0 0.5em rgb(61, 193, 197);
+    text-decoration: underline;
+}
+
+h3 {
+    text-shadow: 3px 3px 4px rgba(35, 226, 226, 0.5), 0 0 0.5em rgb(39, 163, 157);
+    text-decoration: underline;
+}
+
+caption, th {
+    text-shadow: 3px 3px 4px rgba(11, 181, 204, 0.5), 0 0 0.5em rgb(35, 179, 204);
+    text-decoration: underline;
+}
+
+table {
+    border: solid rgb(47, 204, 196);
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul, footer {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
