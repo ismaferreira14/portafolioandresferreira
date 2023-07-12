@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssUsuario.css">
+    <title>Usuario</title>
+</head>
+<body>
+    <table border="3">
+        <caption>Ingrese su usuario</caption>
+        <thead>
+        <tr>
+            <td>C.I.</td>
+            <td>Nombre</td>
+            <td>Sexo</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td><input type="text" maxlength="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); else this.value = this.value.replace(/[^0-9]/g, '')"/>
+            <td><input type="text" name="nombre"></td>
+            <td><input type="radio" name="sexo1" value="H"> Hombre 
+                <input type="radio" name="sexo1" value="M"> Mujer </td>
+        </tr>
+        </tbody>
+
+        <tbody>
+        <tr>
+            <td><input type="text" maxlength="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); else this.value = this.value.replace(/[^0-9]/g, '')"/>
+            <td><input type="text" name="nombre"></td>
+            <td><input type="radio" name="sexo2" value="H"> Hombre 
+                <input type="radio" name="sexo2" value="M"> Mujer </td>
+        </tr>
+        </tbody>
+
+        <tbody>
+        <tr>
+            <td><input type="text" maxlength="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); else this.value = this.value.replace(/[^0-9]/g, '')"/>
+            <td><input type="text" name="nombre"></td>
+            <td><input type="radio" name="sexo3" value="H"> Hombre 
+                <input type="radio" name="sexo3" value="M"> Mujer </td>
+        </tr>
+        </tbody>
+
+        <tbody>
+        <tr>
+            <td><input type="text" maxlength="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); else this.value = this.value.replace(/[^0-9]/g, '')"/>
+            <td><input type="text" name="nombre"></td>
+            <td><input type="radio" name="sexo4" value="H"> Hombre 
+                <input type="radio" name="sexo4" value="M"> Mujer </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <input type="submit" value="Enviar" class="enviar">
+    <input type="reset" value="Borrar" class="borrar">
+
+</body>
+</html>

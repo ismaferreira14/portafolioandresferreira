@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(195, 226, 216);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(7, 148, 153);
+    text-decoration: underline;
+    color: rgb(24, 96, 114);
+    position: absolute;
+    animation: desaparecer-reaparecer 4s infinite;
+}
+
+.text1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(43, 136, 136);
+    text-decoration: underline;
+    color: rgb(25, 89, 97);
+    position: absolute;
+    animation: desaparecer-reaparecer 4s infinite;
+}
+
+.text2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(79, 203, 203);
+    text-decoration: underline;
+    color: rgb(46, 139, 146);
+    position: absolute;
+    animation: desaparecer-reaparecer 4s infinite;
+}
+
+.text3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+.text1 {
+    transition: color 0.5s ease;
+}
+
+.text1:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text2 {
+    transition: color 0.5s ease;
+}
+
+.text2:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text3 {
+    transition: color 0.5s ease;
+}
+
+.text3:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+@keyframes desaparecer-reaparecer {
+    0% {opacity: 1;}
+
+    50% {opacity: 0;}
+
+    100% {opacity: 1;}
+}
+
+@media (min-width:360px){
+    .text1 {
+        left: 5%;
+        top: 10%;
+    }
+    
+    h2 {
+        top: 95%;
+    }
+    
+    .text2 {
+        left: 5%;
+        top: 110%;
+    }
+
+    h3 {
+        top: 170%;
+    }
+
+    .text3 {
+        left: 5%;
+        top: 190%;
+    }
+}
+
+@media (min-width:768px){
+    .text1 {
+        left: 5%;
+        top: 10%;
+    }
+    
+    h2 {
+        top: 55%;
+    }
+    
+    .text2 {
+        left: 5%;
+        top: 65%;
+    }
+
+    h3 {
+        top: 95%;
+    }
+
+    .text3 {
+        left: 5%;
+        top: 105%;
+    }
+}
