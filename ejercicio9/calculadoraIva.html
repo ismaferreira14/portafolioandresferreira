@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cssIva.css">
+    <title>Ejercicio de IVA</title>
+</head>
+<body>
+    <h1>Calculadorda de IVA.</h1>
+    <p>El iva actualmente es de 22% segun la DGI <br>
+     si desea saber el IVA de algun monto, debajo encontrar nuestra calculadora.</p>
+    <div>
+        <span>
+            <label>Ingrese el monto al cual desea calcular el IVA:</label> <br>
+            <input type="text" id="numeroInput" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                class="monto" placeholder="Monto a calcular" required><br><br>
+        </span>
+    </div>
+    <div class="contenedor">
+            <label>Acá aparecerá el monto, más el IVA:</label> <br>
+            <span id="calcularIvaResultado" class="calcular"></span>
+            <img src="img/calculadora.png" alt="calculadora">
+    </div>
+    <input type="button" value="Calcular" class="calcularIVA" onclick="calcularIVA()">
+    <script src="calcularIva.js"></script>
+</body>
+</html>
