@@ -7,9 +7,13 @@
     <title>Ejercicio de IVA</title>
 </head>
 <body>
-    <h1>Calculadorda de IVA.</h1>
-    <p>El iva actualmente es de 22% segun la DGI <br>
-     si desea saber el IVA de algun monto, debajo encontrar nuestra calculadora.</p>
+    <h1>Calculadora de IVA.</h1>
+    <p>si desea saber el IVA de algun monto, debajo encontrar nuestra calculadora.</p>
+    <label>Seleccione el porcentaje de IVA:</label>
+<select id="porcentajeIVA" class="calcularIVA">
+    <option value="0.10">10</option>
+</select>
+
     <div>
         <span>
             <label>Ingrese el monto al cual desea calcular el IVA:</label> <br>
@@ -19,8 +23,11 @@
     </div>
     <div class="contenedor">
             <label>Acá aparecerá el monto, más el IVA:</label> <br>
-            <span id="calcularIvaResultado" class="calcular"></span>
+            <section calculadorimg>
+                <span id="calcularIvaResultado" class="calcular"></span>
             <img src="img/calculadora.png" alt="calculadora">
+            </section>
+            
     </div>
     <input type="button" value="Calcular" class="calcularIVA" onclick="calcularIVA()">
     <script src="calcularIva.js"></script>
