@@ -1,139 +1,91 @@
 body {
-    background-color: rgb(195, 226, 216);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
-    background-size: cover;
+    font-size: 16px;
 }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    text-shadow: 2px 2px 5px rgb(7, 148, 153);
-    text-decoration: underline;
-    color: rgb(24, 96, 114);
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-text h1,
+.image-text h2,
+.image-text h3 {
+    color: #faf6f6; 
+    animation: parpadeo 2s infinite; 
+}
+
+.image-text h1:hover,
+.image-text h2:hover,
+.image-text h3:hover {
+    color: #19e6db; 
+    animation: none; 
+}
+
+
+.image-section {
+    position: relative;
+    text-align: center;
+}
+
+
+.image-section img {
+    max-width: 100%; 
+    height: auto;
+    position: relative; 
+    z-index: 0; 
+}
+
+.image-text {
     position: absolute;
-    animation: desaparecer-reaparecer 4s infinite;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px; 
 }
 
-.text1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
-    color: rgb(0, 0, 0);
-    position: absolute;
+
+.image-text h4 {
+    margin: 0; 
+    font-size: 24px; 
 }
 
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    text-shadow: 2px 2px 5px rgb(43, 136, 136);
-    text-decoration: underline;
-    color: rgb(25, 89, 97);
-    position: absolute;
-    animation: desaparecer-reaparecer 4s infinite;
+
+.image-text p {
+    font-size: 16px; 
 }
 
-.text2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
-    color: rgb(0, 0, 0);
-    position: absolute;
-}
 
-h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    text-shadow: 2px 2px 5px rgb(79, 203, 203);
-    text-decoration: underline;
-    color: rgb(46, 139, 146);
-    position: absolute;
-    animation: desaparecer-reaparecer 4s infinite;
-}
-
-.text3 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
-    color: rgb(0, 0, 0);
-    position: absolute;
-}
-
-.text1 {
-    transition: color 0.5s ease;
-}
-
-.text1:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-}
-
-.text2 {
-    transition: color 0.5s ease;
-}
-
-.text2:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-}
-
-.text3 {
-    transition: color 0.5s ease;
-}
-
-.text3:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-}
-
-@keyframes desaparecer-reaparecer {
-    0% {opacity: 1;}
-
-    50% {opacity: 0;}
-
-    100% {opacity: 1;}
-}
-
-@media (min-width:360px){
-    .text1 {
-        left: 5%;
-        top: 10%;
-    }
-    
-    h2 {
-        top: 95%;
-    }
-    
-    .text2 {
-        left: 5%;
-        top: 110%;
-    }
-
-    h3 {
-        top: 170%;
-    }
-
-    .text3 {
-        left: 5%;
-        top: 190%;
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
     }
 }
 
-@media (min-width:768px){
-    .text1 {
-        left: 5%;
-        top: 10%;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 16px;
     }
-    
-    h2 {
-        top: 55%;
-    }
-    
-    .text2 {
-        left: 5%;
-        top: 65%;
-    }
+}
 
-    h3 {
-        top: 95%;
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
     }
+}
 
-    .text3 {
-        left: 5%;
-        top: 105%;
-    }
+
+img {
+    max-width: 100%;
+    height: auto;
 }
