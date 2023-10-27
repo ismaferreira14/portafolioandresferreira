@@ -1,0 +1,55 @@
+body {
+    background-image: url(imagenesEdad/crecimiento.png);
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px; 
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-decoration: underline;
+    color: rgb(8, 8, 8);
+    animation: desaparecer-reaparecer 4s infinite;
+}
+
+@keyframes desaparecer-reaparecer {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+select {
+    font-size: xx-large;
+    height: 35px;
+    width: 100%; 
+    max-width: 300px;
+    margin: 0 auto; 
+}
+
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+#imgedad {
+    max-width: 80%; 
+    margin: 20px auto; 
+}
+
+
+@media (max-width: 768px) {
+    #imgedad {
+        max-width: 90%; 
+    }
+}

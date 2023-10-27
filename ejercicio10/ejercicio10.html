@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssEdades.css">
+    <link rel="icon" href="imgenesEdad/icono.png">
+    <title>Pŕactico edad y etapas</title>
+</head>
+<body>
+    <script src="calcularEdad.js"></script>
+    <h1>Practico de edad y etapas de la vida.</h1>
+    <p>Seleccione el rango de edad deseado:</p>
+        <select id="edad" onchange="imagenEdades()">
+            <option value="">Seleccione una opción</option>
+            <option value="0a1">0 a 1 infancia</option>
+            <option value="2a13">2 a 13 Niñez</option>
+            <option value="14a23">14 a 23 Adolescencia</option>
+            <option value="24a48">24 a 48 Adultez</option>
+            <option value="mas48">+48 Senectud</option>
+        </select><br><br>
+        <img id="imgedad" src="imagenesEdad/todasedades.png" alt="imagen dependiendo de eleccion">
+        <br>
+</body>
+</html>
