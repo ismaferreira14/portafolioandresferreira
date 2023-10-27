@@ -20,16 +20,28 @@ body {
     position: relative;
 }
 
-.calcular {
+section[calculadorimg] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .calcular {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
-    width: 11%;
-    height: 25px;
-    position: absolute;
-    top: 55px;
-    left: 595px;
     background-color: rgba(200, 33, 33, 0);
-}
+    position: absolute;
+    top: 13%;
+    left: 50%; /* Alinea horizontalmente al centro */
+    transform: translate(-50%, -50%); /* Centra el elemento en sí mismo */
+  }
+  
+  img {
+    width: 150px; /* Ajusta el ancho de la calculadora según tus preferencias */
+  }
+  
 
 .calcularIVA {
     font-family: Georgia, 'Times New Roman', Times, serif;
