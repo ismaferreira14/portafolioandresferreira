@@ -2,7 +2,7 @@ body {
     background-image: url(img/fondoPantalla.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Opcional: fija el fondo en su lugar */
+    background-attachment: fixed;
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;

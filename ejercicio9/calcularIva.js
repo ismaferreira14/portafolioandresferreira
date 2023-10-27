@@ -1,5 +1,5 @@
 function calcularIVA() {
-    var numeroInput = parseFloat(document.getElementById("numeroInput").value); // Convierte el monto a un número
+    var numeroInput = parseFloat(document.getElementById("numeroInput").value);
     var porcentajeIVA = parseFloat(document.getElementById("porcentajeIVA").value);
 
     if (!isNaN(numeroInput) && !isNaN(porcentajeIVA)) {
